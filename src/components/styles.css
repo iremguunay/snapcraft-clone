@@ -1,0 +1,69 @@
+.p-navigation__logo {
+  display: flex;
+  height: 3.5rem;
+  align-items: center;
+}
+
+.p-navigation__banner {
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 1035px) {
+  .search-button {
+    width: 100%;
+  }
+}
+
+.search-area {
+  background-image: linear-gradient(
+      to bottom left,
+      rgba(225, 225, 225, 0.03) 0%,
+      rgba(225, 225, 225, 0.03) 49.9%,
+      rgba(225, 225, 225, 0) 50%,
+      rgba(225, 225, 225, 0) 100%
+    ),
+    linear-gradient(
+      to top left,
+      rgba(225, 225, 225, 0.03) 0%,
+      rgba(225, 225, 225, 0.03) 49.9%,
+      rgba(225, 225, 225, 0) 50%,
+      rgba(225, 225, 225, 0) 100%
+    ),
+    linear-gradient(10deg, #00302f, #006361);
+  background-position: top right, bottom right;
+  background-repeat: no-repeat;
+  background-size: 80% 70%, 80% 75%, 100% auto;
+  color: #f7f7f7;
+  padding: 4rem 0 8rem;
+}
+
+.search-area::after {
+  background-image: url(https://assets.ubuntu.com/v1/077b5e59-hero-bg-mask-snapcraft--white-orange--bigger-accent.svg);
+  background-position: 100% 60%;
+  background-repeat: no-repeat;
+  bottom: -3px;
+  content: "";
+  left: -3px;
+  pointer-events: none;
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 1036px) {
+    .search-area::after {
+      background-size: 100%;
+    }
+  }
+
+@media only screen and (max-width: 1036px) {
+  .search-area::after {
+    background-size: auto 3rem;
+  }
+}
+
+.p-strip {
+    padding-bottom: 2rem;
+    padding-top: 7rem;
+}
